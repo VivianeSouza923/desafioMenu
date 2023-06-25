@@ -134,7 +134,7 @@ class CardTwo extends StatelessWidget {
                           //Padding(padding: EdgeInsets.only()),
 
                           Text(
-                            "Olá, o estabelecimento \n    cobra 10% de taxa\n adicional e couvert a\n       partir das 20h.",
+                            "   As terças e quintas\n  temos promoção de\n 30%  de desconto em\ntodo o nosso cardápio!",
                             style: TextStyle(
                               color: Color(0xFF5B5B5B),
                               fontSize: 20,
@@ -186,22 +186,18 @@ class CardTwo extends StatelessWidget {
                                   borderRadius: BorderRadius.circular(20),
                                   color: const Color(0xFFC5C5C5),
                                 ),
-                                child: 
-                                SizedBox(
+                                child: SizedBox(
                                   width: 12,
                                   height: 24,
                                   child: IconButton(
-                                    onPressed: () {
-                                      print(
-                                          "vou fazer aindaaaa. espera um pouco/////111");
-                                    },
-                                    icon: const Icon(
-                                        Icons.arrow_forward_ios_outlined),
-                                    color: const Color(0xFF676767),
-                                    padding: const EdgeInsets.all(4)
-                                        
-                                  ),
-                                  
+                                      onPressed: () {
+                                        print(
+                                            "vou fazer aindaaaa. espera um pouco/////111");
+                                      },
+                                      icon: const Icon(
+                                          Icons.arrow_forward_ios_outlined),
+                                      color: const Color(0xFF676767),
+                                      padding: const EdgeInsets.all(4)),
                                 ),
                               ),
                             ],
