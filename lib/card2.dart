@@ -143,21 +143,12 @@ class CardTwo extends StatelessWidget {
                           ),
                         ],
                       ),
+
+                      // 2 BOTÕES CIRCULARES 
                       const SizedBox(height: 24),
                       Row(
                         children: [
-                          const SizedBox(width: 108),
-                          Container(
-                            width: 17,
-                            height: 17,
-                            decoration: const BoxDecoration(
-                              shape: BoxShape.circle,
-                              color: Color(0xFF676767),
-                            ),
-                          ),
-                          const SizedBox(
-                            width: 30,
-                          ),
+                          const SizedBox(width: 98),
                           Container(
                             //margin: const EdgeInsets.only(right: 30.0),
                             width: 17,
@@ -173,13 +164,29 @@ class CardTwo extends StatelessWidget {
                               },
                             ),
                           ),
+                       
                           const SizedBox(
-                            width: 35,
+                            width: 30,
+                          ),
+                          Container(
+                            width: 17,
+                            height: 17,
+                            decoration: const BoxDecoration(
+                              shape: BoxShape.circle,
+                              color: Color(0xFF676767),
+                            ),
+                          ),
+                          
+
+
+                          //BOTÃO CHECK
+                          const SizedBox(
+                            width: 30,
                           ),
                           Column(
                             children: [
                               Container(
-                                margin: const EdgeInsets.only(bottom: 0),
+                                //margin: const EdgeInsets.only(bottom: 0),
                                 width: 58,
                                 height: 56,
                                 decoration: BoxDecoration(
@@ -194,10 +201,12 @@ class CardTwo extends StatelessWidget {
                                         print(
                                             "vou fazer aindaaaa. espera um pouco/////111");
                                       },
-                                      icon: const Icon(
-                                          Icons.arrow_forward_ios_outlined),
+                                      icon:  const Icon(
+                                          Icons.check,
+                                          ),
                                       color: const Color(0xFF676767),
-                                      padding: const EdgeInsets.all(4)),
+                                     padding: const EdgeInsets.all(4)
+                                      ),
                                 ),
                               ),
                             ],

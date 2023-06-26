@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-import 'card2.dart';
+import 'card3.dart';
 
 void main() {
   runApp(const MyApp());
