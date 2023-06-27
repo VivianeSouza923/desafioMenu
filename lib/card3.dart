@@ -53,11 +53,19 @@ class CardThree extends StatelessWidget {
                   ),
                 ),
               ),
+
+            
               
-              Padding(padding: EdgeInsets.fromLTRB(bleft, btop, bright, bbottom),
+             Padding(
+                
+              padding: EdgeInsets.fromLTRB(bleft, btop, bright, bbottom),
                 
               child: Container(
+                
                 //padding: EdgeInsets.fromLTRB(bleft, btop, bright, bbottom),
+                //margin: EdgeInsets.only(left: bleft, top: btop),
+
+               // padding: EdgeInsets.fromLTRB(bleft, btop, bright, bbottom),
                 
                 width: 101,
                 height: 101,
@@ -65,11 +73,12 @@ class CardThree extends StatelessWidget {
                 decoration: const BoxDecoration(
                   shape: BoxShape.circle,
                   color: Color(0xFFD9D9D9),
+                  
 
                   
                 ),
-              ),
-              ),
+                ),),
+              
             ],
           ),
 
