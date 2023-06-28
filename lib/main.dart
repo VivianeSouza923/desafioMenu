@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-import 'card2.dart';
+import 'home.dart';
 
 void main() {
   runApp(const MyApp());

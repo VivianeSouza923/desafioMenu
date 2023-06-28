@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:iniciocardapio/home_extendido.dart';
 
 void main() {
   runApp(MyApp());
@@ -70,7 +71,10 @@ class home extends StatelessWidget {
                       ),
                       child: IconButton(
                         onPressed: () {
-                          print("pera");
+                          Navigator.push(
+                                context,
+                                MaterialPageRoute(builder: (context) => const homeExtendido()),
+                                );
                         },
                         icon: const Icon(
                           Icons.menu,

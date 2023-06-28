@@ -212,7 +212,9 @@ class CardOne extends StatelessWidget {
                                     icon: const Icon(
                                         Icons.arrow_forward_ios_outlined),
                                     color: const Color(0xFF676767),
-                                    padding: const EdgeInsets.all(4)
+                                    padding: const EdgeInsets.all(4),
+                                  
+                              
                                         
                                   ),
                                   
