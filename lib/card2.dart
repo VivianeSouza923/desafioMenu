@@ -1,4 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
+import 'package:iniciocardapio/card1CORRIGIDO.dart';
+import 'package:iniciocardapio/home.dart';
 
 class XButton extends StatelessWidget {
   final double size;
@@ -104,19 +107,22 @@ class CardTwo extends StatelessWidget {
                             color: const Color(0xFF5B5B5B),
                             onPressed: () {
                               // Terminar ainda
-                              print("n sei");
+                              Navigator.push(
+                                context,
+                                MaterialPageRoute(builder: (context) => const home()),
+                                );
                             },
                           ),
                         ],
                       ),
                       Row(
                         mainAxisAlignment: MainAxisAlignment.center,
-                        children: const [
+                        children:  [
                           //Padding(padding: EdgeInsets.only()),
 
                           Text(
                             "Atenção",
-                            style: TextStyle(
+                            style: GoogleFonts.inter(
                               color: Color(0xFF5B5B5B),
                               fontSize: 24,
                               fontWeight: FontWeight.w500,
@@ -127,7 +133,7 @@ class CardTwo extends StatelessWidget {
                       const SizedBox(height: 16),
                       Row(
                         mainAxisAlignment: MainAxisAlignment.center,
-                        children: const [
+                        children:  [
                           SizedBox(
                             width: 10,
                           ),
@@ -135,7 +141,7 @@ class CardTwo extends StatelessWidget {
 
                           Text(
                             "   As terças e quintas\n  temos promoção de\n 30%  de desconto em\ntodo o nosso cardápio!",
-                            style: TextStyle(
+                            style: GoogleFonts.inter(
                               color: Color(0xFF5B5B5B),
                               fontSize: 20,
                               fontWeight: FontWeight.w400,
@@ -160,7 +166,10 @@ class CardTwo extends StatelessWidget {
                             child: InkWell(
                               onTap: () {
                                 // Ação do botão
-                                print("vou voltar e fazer ainda");
+                                Navigator.push(
+                                context,
+                                MaterialPageRoute(builder: (context) => const CardOne()),
+                                );
                               },
                             ),
                           ),
@@ -198,8 +207,10 @@ class CardTwo extends StatelessWidget {
                                   height: 24,
                                   child: IconButton(
                                       onPressed: () {
-                                        print(
-                                            "vou fazer aindaaaa. espera um pouco/////111");
+                                       Navigator.push(
+                                context,
+                                MaterialPageRoute(builder: (context) => const home()),
+                                );
                                       },
                                       icon:  const Icon(
                                           Icons.check,

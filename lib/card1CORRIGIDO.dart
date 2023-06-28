@@ -1,4 +1,9 @@
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
+import 'package:iniciocardapio/card2.dart';
+
+import 'home.dart';
+
 
 class XButton extends StatelessWidget {
   final double size;
@@ -104,38 +109,42 @@ class CardOne extends StatelessWidget {
                             color: const Color(0xFF5B5B5B),
                             onPressed: () {
                               // Terminar ainda
-                              print("n sei");
+                               Navigator.push(
+                                context,
+                                MaterialPageRoute(builder: (context) => const home()),
+                                );
                             },
                           ),
                         ],
                       ),
                       Row(
                         mainAxisAlignment: MainAxisAlignment.center,
-                        children: const [
+                        children:  [
                           //Padding(padding: EdgeInsets.only()),
 
                           Text(
                             "Atenção",
-                            style: TextStyle(
-                              color: Color(0xFF5B5B5B),
+                            style: GoogleFonts.inter(
+                              
+                              color: const Color(0xFF5B5B5B),
                               fontSize: 24,
                               fontWeight: FontWeight.w500,
-                            ),
+                             ), 
                           ),
                         ],
                       ),
                       const SizedBox(height: 16),
                       Row(
                         mainAxisAlignment: MainAxisAlignment.center,
-                        children: const [
-                          SizedBox(
+                        children:  [
+                          const SizedBox(
                             width: 10,
                           ),
                           //Padding(padding: EdgeInsets.only()),
 
                           Text(
                             "Olá, o estabelecimento \n    cobra 10% de taxa\n adicional e couvert a\n       partir das 20h.",
-                            style: TextStyle(
+                            style: GoogleFonts.inter(
                               color: Color(0xFF5B5B5B),
                               fontSize: 20,
                               fontWeight: FontWeight.w400,
@@ -146,7 +155,7 @@ class CardOne extends StatelessWidget {
                       const SizedBox(height: 24),
                       Row(
                         children: [
-                          const SizedBox(width: 108),
+                          const SizedBox(width: 98),
                           Container(
                             width: 17,
                             height: 17,
@@ -169,7 +178,10 @@ class CardOne extends StatelessWidget {
                             child: InkWell(
                               onTap: () {
                                 // Ação do botão
-                                print("vou voltar e fazer ainda");
+                                 Navigator.push(
+                                  context,
+                                  MaterialPageRoute(builder: (context) => const CardTwo()),
+                                  );
                               },
                             ),
                           ),
@@ -192,8 +204,10 @@ class CardOne extends StatelessWidget {
                                   height: 24,
                                   child: IconButton(
                                     onPressed: () {
-                                      print(
-                                          "vou fazer aindaaaa. espera um pouco/////111");
+                                       Navigator.push(
+                                        context,
+                                        MaterialPageRoute(builder: (context) => const CardTwo()),
+                                       );
                                     },
                                     icon: const Icon(
                                         Icons.arrow_forward_ios_outlined),
