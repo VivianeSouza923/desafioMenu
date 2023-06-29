@@ -111,7 +111,7 @@ class CardOne extends StatelessWidget {
                               // Terminar ainda
                                Navigator.push(
                                 context,
-                                MaterialPageRoute(builder: (context) => const home()),
+                                MaterialPageRoute(builder: (context) => const HomePage()),
                                 );
                             },
                           ),

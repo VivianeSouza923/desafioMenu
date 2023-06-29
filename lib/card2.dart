@@ -109,7 +109,7 @@ class CardTwo extends StatelessWidget {
                               // Terminar ainda
                               Navigator.push(
                                 context,
-                                MaterialPageRoute(builder: (context) => const home()),
+                                MaterialPageRoute(builder: (context) => const HomePage()),
                                 );
                             },
                           ),
@@ -209,7 +209,7 @@ class CardTwo extends StatelessWidget {
                                       onPressed: () {
                                        Navigator.push(
                                 context,
-                                MaterialPageRoute(builder: (context) => const home()),
+                                MaterialPageRoute(builder: (context) => const HomePage()),
                                 );
                                       },
                                       icon:  const Icon(
